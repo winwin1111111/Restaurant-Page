@@ -1,0 +1,124 @@
+@font-face{
+    font-family: Tangerine;
+    src: url(logo-font.ttf);
+}
+* {
+    box-sizing: border-box;
+}
+body,
+html{
+    margin:0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(./image/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display:flex;
+    flex-direction: column;
+
+}
+h1,
+h2,
+p{
+    margin:0px;
+}
+#content img{
+    width:300px;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.9);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:40px;
+    padding-bottom: 20px;
+    border: 1px solid #222;
+}
+header h1{
+    font-family: Tangerine;
+    font-size: 110px;
+}
+nav{
+    display:flex;
+    gap:40px;
+}
+nav button{
+    background-color: inherit;
+    color:white;
+    border:0px;
+    font-size: 20px;
+    font-family: inherit;
+    height:70px;
+    transition: transform 0.5s;
+}
+nav button:hover{
+    border-bottom: 1px solid white;
+    transform: translateY(-10px);
+}
+
+#content{
+    width: 700px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display:flex;
+    flex-direction: column;
+    color:white;
+    align-items: center;
+    gap:40px;
+    font-size: 20px;
+    padding: 50px 0px;
+    align-self: center;
+    margin:50px;
+    border: 1px solid #222;
+}
+#menu{
+    background-color: rgba(0, 0, 0, 0.6);
+    color:white;
+    margin:50px;
+    width: 700px;
+    align-self: center;
+    border: 1px solid #222;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding:50px;
+    gap:50px;
+}
+#pizzaContainer{
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding:20px;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    align-items: center;
+    line-height: 1.6;
+    transition: all 0.5s;
+}
+#pizzaContainer img{
+    width:150px;
+}
+#pizzaContainer:hover{
+    background-color: rgba(99, 99, 99, 0.4);
+}
+#contact{
+    background-color: rgba(0, 0, 0, 0.6);
+    color:white;
+    margin:50px;
+    width: 700px;
+    align-self: center;
+    border: 1px solid #222;
+    padding:50px;
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    font-size: 15px;
+}
+
+#footer{
+    background-color: rgba(0, 0, 0, 0.6);
+    color:white;
+    display:flex;
+    justify-content: center;
+    padding: 15px 0px;
+
+}
